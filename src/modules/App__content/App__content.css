@@ -1,0 +1,31 @@
+.heroes-container {
+  text-align: center;
+  width: 30%;
+  margin-bottom: 5%
+}
+
+.heroes-container h3 {
+  margin: 0.3rem 0;
+}
+.heroes-container__item {
+  margin: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+.heroes-container__item span {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  padding: 0.5rem 0rem;
+}
+
+.heroes-container__item span:last-child {
+  margin: 0 10% 0 auto;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
