@@ -15,12 +15,6 @@ class MyHeroes extends Component {
     return intelligence;
   }
 
-  intelligence = () => {
-    let intelligence = 0;
-    this.props.myHeroes.forEach(hero => intelligence += hero.intelligence);
-    return intelligence;
-  }
-
   speed = () => {
     let speed = 0;
     this.props.myHeroes.forEach(hero => speed += hero.speed);
@@ -28,7 +22,7 @@ class MyHeroes extends Component {
   }
 
   render() {
-    console.log('this.props', this.props);
+    console.log('this.props myheroesstats', this.props);
     return (
       <div className="heroes-container">
         <h3>My Heroes Stats</h3>
@@ -51,11 +45,5 @@ const mapStateToProps = (state) => {
     myHeroes: state.myHeroes
   };
 }
-
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     removeHeroById_action: (id) => dispatch({ type: 'REMOVE_HERO', id })
-//   }
-// }
 
 export default connect(mapStateToProps, null)(MyHeroes);

@@ -28,4 +28,9 @@
 .btn {
   padding: 0.5rem 1rem;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover, .btn:active {
+  background-color:rgba(0, 0, 0, 0.1);
 }
